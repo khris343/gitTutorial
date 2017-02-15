@@ -3,20 +3,15 @@
  */
 public class Student extends Person {
     String major;
-    List<Course> courseList;
+    boolean fullTime;
 
-    public Student(String name, String emailAddress, String major) {
+    public Student(String name, String emailAddress, String major, boolean fulltime) {
         super(name, emailAddress);
         this.major = major;
+        this.fullTime = fulltime;
     }
 
     public String toString() {
         return String.format("Name: %s\nMajor: %s\nEmail: %s", this.name, this.major, this.emailAddress);
     }
-
-    public void addCourse(Course c)
-    {
-
-    }
-
 }
